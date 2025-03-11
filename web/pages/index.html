@@ -19,6 +19,49 @@
     />
   </head>
   <body>
+    <header class="bg-[rgb(40,41,62)] text-white shadow-xl header-animation">
+        <div class="max-w-screen-xl mx-auto px-6 sm:px-8 py-6">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-3xl font-bold tracking-wide text-white">
+                    <a href="#" class="text-white hover:text-gray-300 transition duration-300"><i class="fa-solid fa-brackets-curly"></i> Csdev developer</a>
+                </div>
+    
+                <!-- Menu de navegação (Mobile e Desktop) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-white text-lg font-medium hover:text-gray-300 transition duration-300"> <i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#sobre" class="text-white text-lg font-medium hover:text-gray-300 transition duration-300"><i class="fa-regular fa-comment"></i> Sobre</a>
+                    <a href="#servicos" class="text-white text-lg font-medium hover:text-gray-300 transition duration-300"> <i class="fa-solid fa-user-tie"></i> Portfolio</a>
+                 
+                </nav>
+    
+                <!-- Botão de call-to-action -->
+                <div class="hidden md:flex">
+                    <a href="#contato" class="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300"><i class="fa-regular fa-id-badge"></i> Fale Conosco</a>
+                </div>
+    
+                <!-- Menu Hambúrguer para mobile -->
+                <div class="md:hidden">
+                    <button id="menuToggle" class="text-white focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Menu hambúrguer no mobile -->
+            <div id="mobileMenu" class="md:hidden mt-6 space-y-6 hidden">
+                <a href="#home" class="block text-white text-lg font-medium hover:text-gray-300 transition duration-300"><i class="fa-solid fa-house"></i> Home</a>
+
+                <a href="#servicos" class="block text-white text-lg font-medium hover:text-gray-300 transition duration-300"><i class="fa-solid fa-user-tie"></i> Portfolio</a>
+                <a href="#contato" class="block text-white text-lg font-medium hover:text-gray-300 transition duration-300"><i class="fa-regular fa-address-book"></i> Contato</a>
+                <a href="#contato" class="block bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold"><i class="fa-regular fa-address-book"></i> Fale Conosco</a>
+            </div>
+        </div>
+    </header>
+
+
     <section class="bg-custom">
       <div
         class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
@@ -62,7 +105,114 @@
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Botão do WhatsApp com ícone -->
+<a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-button">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a>
+  
+    
+  <!-- Seção de Serviços -->
+<section id="servicos" class="py-32 bg-[#28293E]">
+    <div class="max-w-screen-xl mx-auto px-6 sm:px-8">
+        <h2 class="text-5xl font-extrabold text-center text-white mb-20 animate__animated animate__fadeIn animate__delay-1s">Nossos Serviços</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Serviço 1: Desenvolvimento de Aplicativos -->
+            <div class="service-card transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl rounded-2xl bg-gradient-to-b from-[#1f2533] to-[#3c4856] p-10 flex flex-col items-center justify-between shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-[#f4b400]">
+                <div class="mb-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-20 h-20 text-[#f4b400]">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <h3 class="text-3xl font-semibold text-white mb-6">Desenvolvimento de Aplicativos</h3>
+                <p class="text-gray-200 text-center leading-relaxed text-lg">Desenvolvemos aplicativos personalizados, inovadores e de alta performance, que atendem às necessidades do seu negócio.</p>
+            </div>
+
+            <!-- Serviço 2: Desenvolvimento de Sites -->
+            <div class="service-card transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl rounded-2xl bg-gradient-to-b from-[#1f2533] to-[#3c4856] p-10 flex flex-col items-center justify-between shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-[#3498db]">
+                <div class="mb-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-20 h-20 text-[#3498db]">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 11h18M3 15h18" />
+                    </svg>
+                </div>
+                <h3 class="text-3xl font-semibold text-white mb-6">Desenvolvimento de Sites</h3>
+                <p class="text-gray-200 text-center leading-relaxed text-lg">Criamos sites modernos, responsivos e otimizados para conversão, com design único e soluções eficazes para sua empresa.</p>
+            </div>
+
+            <!-- Serviço 3: Limpeza e Formatação de Computadores -->
+            <div class="service-card transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl rounded-2xl bg-gradient-to-b from-[#1f2533] to-[#3c4856] p-10 flex flex-col items-center justify-between shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-[#e74c3c]">
+                <div class="mb-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-20 h-20 text-[#e74c3c]">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 10l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </div>
+                <h3 class="text-3xl font-semibold text-white mb-6">Limpeza e Formatação de Computadores</h3>
+                <p class="text-gray-200 text-center leading-relaxed text-lg">Melhore a performance do seu computador com nossos serviços de limpeza e formatação de alta qualidade. Mais velocidade e segurança para o seu dia a dia.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+          <!-- Seção de Contato -->
+          <div class="footer-section contact">
+            <h2 class="footer-heading"><i class="fa-solid fa-circle-user"></i> Entre em Contato</h2>
+            <p class="footer-text">Tem alguma dúvida? Fale conosco, estamos aqui para ajudar!</p>
+            <form class="contact-form">
+              <input type="text" placeholder="Seu nome" required class="contact-input"/>
+              <input type="email" placeholder="Seu e-mail" required class="contact-input"/>
+              <textarea placeholder="Sua mensagem" required class="contact-textarea"></textarea>
+              
+              <!-- Botão de Envio com estilo personalizado -->
+              <button type="submit" class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                <i class="fa fa-paper-plane ml-2"></i>  Enviar
+              </button>
+              
+            </form>
+          </div>
+          
+          <!-- Seção de Links -->
+          <div class="footer-section links">
+            <h2 class="footer-heading">Links Rápidos</h2>
+            <ul class="footer-links">
+              <li><a href="#"><i class="fa fa-info-circle"></i> Sobre nós</a></li>
+              <li><a href="#"><i class="fa fa-cogs"></i> Serviços</a></li>
+              <li><a href="#"><i class="fa fa-pencil-alt"></i> Blog</a></li>
+              <li><a href="#"><i class="fa fa-file-contract"></i> Termos de uso</a></li>
+              <li><a href="#"><i class="fa fa-shield-alt"></i> Privacidade</a></li>
+            </ul>
+          </div>
+          
+          <!-- Seção de Redes Sociais -->
+          <div class="footer-section social">
+            <h2 class="footer-heading">Redes Sociais</h2>
+            <ul class="social-icons">
+              <li><a href="#" class="social-link"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+          
+          <!-- Seção de Informações -->
+          <div class="footer-section info">
+            <h2 class="footer-heading">Informações</h2>
+            <p class="footer-info"><i class="fa fa-location-dot"></i> Rua Exemplo, 123 - Cidade, Estado</p>
+            <p class="footer-info"><i class="fa fa-phone"></i> (11) 1234-5678</p>
+            <p class="footer-info"><i class="fa fa-envelope"></i> contato@empresa.com</p>
+          </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 CSDev. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
   </body>
+  <script src="../script/menu.js"></script>
 </html>
