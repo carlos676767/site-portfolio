@@ -1,0 +1,153 @@
+/* Fundo do Alerta */
+.alerta-sucesso {
+    background: linear-gradient(to right, #34d399, #14b8a6); /* Gradiente verde */
+    border-radius: 1rem; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+    border: 2px solid #34d399; /* Borda verde */
+ 
+  }
+  
+  /* Efeito hover de escala */
+  .alerta-sucesso:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Texto do Alerta */
+  .alerta-sucesso .text-white {
+    color: white;
+  }
+  
+  /* Estilo do botão de fechar */
+  .alerta-sucesso button {
+    background-color: white;
+    color: #34d399;
+    border-radius: 9999px; /* Bordas arredondadas */
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.875rem; /* Tamanho de fonte pequeno */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Efeito hover no botão */
+  .alerta-sucesso button:hover {
+    background-color: #34d399;
+    color: white;
+  }
+  
+  .alerta-sucesso button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #34d399;
+  }
+  
+
+
+
+   .custom-popup {
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.custom-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+.custom-button {
+  background-color: #16a34a !important;
+  color: white !important;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  background-color: #15803d !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-popup {
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.custom-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+.custom-button {
+  background-color: #16a34a !important;
+  color: white !important;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  background-color: #15803d !important;
+}
