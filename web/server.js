@@ -19,6 +19,7 @@ class Express {
 
     const port = 9090;
     
+    
     this.api.listen(port, () => {
       console.log(`Server is running on port ${port}`);
     });

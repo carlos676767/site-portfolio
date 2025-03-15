@@ -8,6 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
    <link rel="stylesheet" href="../style/portfolio.css">
+   <link href="
+   https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.css
+   " rel="stylesheet">
 </head>
 
 <body class="bg-custom text-white">
@@ -56,15 +59,18 @@
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div class="max-w-screen-md">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Confira meu trabalho e aproveite.</h2>
-                <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.</p>
+                <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400"> Confira abaixo meus projetos. Se algum deles despertar seu interesse, entre em contato clicando no botão abaixo.</p>
                 <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                    <a href="#" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                        Get started
-                    </a>
-                    <a href="#" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                        <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
-                        View more
-                    </a>  
+                    <button type="button" class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                        <i class="fa-solid fa-phone-alt"></i> Contato
+                    </button>
+                    <button
+                    class="gradient-button"
+                    type="button"
+                    class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                  >
+                     <i class="fa-solid fa-file-alt"></i> Curriculo
+                  </button>
                 </div>
             </div>
         </div>
@@ -84,8 +90,9 @@
                     <iframe class="w-full h-64 object-cover rounded-t-lg" width="560" height="315" src="https://www.youtube.com/embed/BkCxcel-aqQ?si=eCmBhdGs5lX-ekpj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-white mb-4">Sistema de Tarefas <i class="fas fa-check-circle text-green-500 ml-2"></i></h3>
-                        <p class="text-gray-300 mb-6">Aplicação web para gerenciamento de tarefas com funcionalidades de CRUD e autenticação de usuários.</p>
+                        <h3 class="text-2xl font-semibold text-white mb-4">Sistema Agendamento Offline <i class="fas fa-check-circle text-green-500 ml-2"></i></h3>
+                        <p class="text-gray-300 mb-6">Trabalhei como freelancer em um aplicativo de agendamento para uma cliente do ramo de estética que precisava organizar seus horários de forma prática e offline. 💖
+                        </p>
                         <a href="#" class="btn-action">Ver Detalhes</a>
                     </div>
                 </div>
@@ -95,7 +102,7 @@
                     
                     <iframe class="w-full h-64 object-cover rounded-t-lg" width="560" height="315" src="https://www.youtube.com/embed/ERhvsaAvc2U?si=msdmFjQ9C0mVUfdq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-white mb-4">E-commerce Responsivo <i class="fas fa-store text-yellow-500 ml-2"></i></h3>
+                        <h3 class="text-2xl font-semibold text-white mb-4">Sistema Barberia <i class="fas fa-store text-yellow-500 ml-2"></i></h3>
                         <p class="text-gray-300 mb-6">Desenvolvimento de uma plataforma de e-commerce com carrinho de compras e integração com PIX.</p>
                         <a href="#" class="btn-action">Ver Detalhes</a>
                     </div>
@@ -157,12 +164,12 @@
             <h2 class="footer-heading"><i class="fa-solid fa-circle-user"></i> Entre em Contato</h2>
             <p class="footer-text">Tem alguma dúvida? Fale conosco, estamos aqui para ajudar!</p>
             <form class="contact-form">
-              <input type="text" placeholder="Seu nome" required class="contact-input"/>
-              <input type="email" placeholder="Seu e-mail" required class="contact-input"/>
-              <textarea placeholder="Sua mensagem" required class="contact-textarea"></textarea>
+              <input type="text" placeholder="Seu nome"  id="nome" required class="contact-input"/>
+              <input type="email" placeholder="Seu e-mail" id="email" required class="contact-input"/>
+              <textarea placeholder="Sua mensagem" id="conteudo" required class="contact-textarea"></textarea>
               
 
-              <button type="submit" class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+              <button id="btnSendEmail" class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
                 <i class="fa fa-paper-plane ml-2"></i>  Enviar
               </button>
               
@@ -208,6 +215,11 @@
       
    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
    <script src="../script/menu.js"></script>
+   <script src="../script/formEmail.js"></script>
+   <script src="../../utils/alert.js"></script>
+   <script src="
+   https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js
+   "></script>
 </body>
 
 </html>

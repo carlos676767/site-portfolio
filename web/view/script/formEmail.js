@@ -13,8 +13,10 @@ class ObjectValues {
 
 class SendEmailRequest extends ObjectValues {
   static async sendEmail() {
+   
+    
     try {
-      const sendEmailRequest = await fetch(`http://localhost:8080/sendEmail`, {
+      const sendEmailRequest = await fetch(`http://localhost:9090/sendEmail`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,6 +31,8 @@ class SendEmailRequest extends ObjectValues {
       
       }
       const data = await sendEmailRequest.json();
+
+      
       const {msg} = data
       
       

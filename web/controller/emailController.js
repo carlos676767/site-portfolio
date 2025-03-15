@@ -4,9 +4,14 @@ import EmailService from "../utils/email.js";
 export default class ControllerEmail {
   static async sendEmail(req, res) {
     try {
+  
+      console.log(req.body);
+      
       ValideFilds.valideData(req.body);
       const { name, email, message } = req.body;
-      console.log(req.body);
+
+
+      
       
       ValideFilds.validateEmail(email);
 
