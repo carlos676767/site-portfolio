@@ -28,133 +28,144 @@
 
   <meta name="description" content="portfolio pessoal csdev para compartilhar projetos">
   <body>
-    <header class="bg-[rgb(40,41,62)] text-white shadow-xl header-animation">
-        <div class="max-w-screen-xl mx-auto px-6 sm:px-8 py-6">
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <div class="text-3xl font-bold tracking-wide text-white">
-                    <a href="#" class="text-white hover:text-gray-300 transition duration-300"><i class="fa-solid fa-brackets-curly"></i> Csdev developer</a>
-                </div>
+ 
+    <header id="navbar" class="bg-[#111827] text-white shadow-xl backdrop-blur-sm bg-opacity-95 sticky top-0 z-50">
+      <div class="max-w-screen-xl mx-auto px-6 sm:px-8 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="#" class="text-white text-3xl font-bold flex items-center gap-2 hover:text-pink-500 transition duration-300">
+            <i class="fa-solid fa-code"></i> <span class="tracking-wide">Csdev<span class="text-pink-500">.dev</span></span>
+          </a>
     
-                <!-- Menu de navegação (Mobile e Desktop) -->
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-white text-lg font-medium hover:text-gray-300 transition duration-300"> <i class="fa-solid fa-house"></i> Home</a>
-                    <a href="#sobre" class="text-white text-lg font-medium hover:text-gray-300 transition duration-300"><i class="fa-regular fa-comment"></i> Sobre</a>
-                    <a href="view/pages/portfolio.html" class="text-white text-lg font-medium hover:text-gray-300 transition duration-300"> <i class="fa-solid fa-user-tie"></i> Portfolio</a>
-                 
-                </nav>
+          <!-- Menu de navegação (Desktop) -->
+          <nav class="hidden md:flex space-x-10">
+            <a href="#home" class="text-white text-lg font-medium hover:text-pink-400 transition duration-300 flex items-center gap-2">
+              <i class="fa-solid fa-house"></i> Home
+            </a>
+            <a href="#sobre" class="text-white text-lg font-medium hover:text-pink-400 transition duration-300 flex items-center gap-2">
+              <i class="fa-regular fa-comment"></i> Sobre
+            </a>
+            <a href="view/pages/portfolio.html" class="text-white text-lg font-medium hover:text-pink-400 transition duration-300 flex items-center gap-2">
+              <i class="fa-solid fa-user-tie"></i> Portfólio
+            </a>
+          </nav>
     
-               
-                <div class="hidden md:flex">
-                    <a href="#contato" class="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300"><i class="fa-regular fa-id-badge"></i> Fale Conosco</a>
-                </div>
+          <!-- Botão Fale Conosco -->
+          <div class="hidden md:flex">
+            <a href="#contato" class="bg-gradient-to-r from-pink-600 to-pink-500 hover:from-pink-500 hover:to-pink-400 text-white px-6 py-2 rounded-full font-semibold shadow-md transition duration-300 flex items-center gap-2">
+              <i class="fa-regular fa-id-badge"></i> Fale Conosco
+            </a>
+          </div>
     
-                <!-- Menu Hambúrguer para mobile -->
-                <div class="md:hidden">
-                    <button id="menuToggle" class="text-white focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-    
-            <!-- Menu hambúrguer no mobile -->
-            <div id="mobileMenu" class="md:hidden mt-6 space-y-6 hidden">
-                <a href="#home" class="block text-white text-lg font-medium hover:text-gray-300 transition duration-300"><i class="fa-solid fa-house"></i> Home</a>
-
-                <a href="view/pages/portfolio.html" class="block text-white text-lg font-medium hover:text-gray-300 transition duration-300"><i class="fa-solid fa-user-tie"></i> Portfolio</a>
-                <a href="#contato" class="block text-white text-lg font-medium hover:text-gray-300 transition duration-300"><i class="fa-regular fa-address-book"></i> Contato</a>
-                <a href="#contato" class="block bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold"><i class="fa-regular fa-address-book"></i> Fale Conosco</a>
-            </div>
+          <!-- Ícone menu mobile -->
+          <div class="md:hidden">
+            <button id="menuToggle" class="text-white focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
         </div>
-    </header>
+    
+        <!-- Menu Mobile -->
+        <div id="mobileMenu" class="md:hidden mt-4 space-y-4 hidden">
+          <a href="#home" class="block text-white text-lg font-medium hover:text-pink-400 transition duration-300 flex items-center gap-2">
+            <i class="fa-solid fa-house"></i> Home
+          </a>
+          <a href="#sobre" class="block text-white text-lg font-medium hover:text-pink-400 transition duration-300 flex items-center gap-2">
+            <i class="fa-regular fa-comment"></i> Sobre
+          </a>
+          <a href="view/pages/portfolio.html" class="block text-white text-lg font-medium hover:text-pink-400 transition duration-300 flex items-center gap-2">
+            <i class="fa-solid fa-user-tie"></i> Portfólio
+          </a>
+          <a href="#contato" class="block bg-gradient-to-r from-pink-600 to-pink-500 hover:from-pink-500 hover:to-pink-400 text-white px-6 py-2 rounded-full font-semibold shadow-md transition duration-300 flex items-center gap-2">
+            <i class="fa-regular fa-id-badge"></i> Fale Conosco
+          </a>
+        </div>
+      </div>
 
+
+      
+    </header>
+    
 
     <section class="bg-custom">
-      <div
-        class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
-      >
-        <div class="mr-auto place-self-center lg:col-span-7">
-          <h1
-            class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white"
-          >
-            Csdev full stack developer
-          </h1>
-          <p
-            class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-white"
-          >
-            Olá, seja bem-vindo(a) ao meu site! Sou um desenvolvedor apaixonado
-            por tecnologia, sempre em busca de crescer e me aperfeiçoar a cada
-            dia. Aqui você encontrará projetos de sites e aplicativos que
-            desenvolvo com dedicação e criatividade.
-          </p>
-          <button
-            class="gradient-button"
-            type="button"
-            class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-          >
-             <i class="fa-solid fa-file-alt"></i> Curriculo
-          </button>
-          <button type="button" class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-            <i class="fa-solid fa-phone-alt"></i> Contato
-        </button>
-        
-        
-      
-        </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex" class="img-container">
-          <img
-          id="imgHome"
-          class="img-effect w-full h-auto"
-            src="view/icons/image__6_-removebg-preview-1-2-1536x1194.png"
-            alt="mockup"
-          />
+      <div class="container px-6 py-16 mx-auto">
+        <div class="items-center lg:flex">
+          <div class="w-full lg:w-1/2">
+            <div class="lg:max-w-lg">
+              <h1 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
+                Conheça o meu  <br> <span class="text-blue-500">trabalho</span>
+              </h1>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">
+                Sou Carlos, programador com experiência em <strong>JavaScript, PHP</strong> e <strong>Node.js</strong>. Também fui instrutor de informática, onde compartilhei meu conhecimento com outros.
+              </p>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">
+                Acredito no aprendizado contínuo e na criação de soluções web inovadoras.
+              </p>
+              <button class="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                Veja meus projetos
+              </button>
+
+              <button type="button" class=" text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Curriculo</button>
+            </div>
+          </div>
+    
+          <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+            <img class="w-full h-full lg:max-w-3xl" src="https://merakiui.com/images/components/Catalogue-pana.svg" alt="Carlos - Desenvolvedor">
+          </div>
+
+          
+       
         </div>
       </div>
     </section>
+    
 
 
     
-  <!-- Seção de Serviços -->
-<section id="servicos" class="py-32 bg-[#28293E]">
-    <div class="max-w-screen-xl mx-auto px-6 sm:px-8">
-        <h2 class="text-5xl font-extrabold text-center text-white mb-20 animate__animated animate__fadeIn animate__delay-1s"><i class="fa-solid fa-truck"></i> Nossos Serviços</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-            <!-- Serviço 1: Desenvolvimento de Aplicativos -->
-            <div class="service-card transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl rounded-2xl bg-gradient-to-b from-[#1f2533] to-[#3c4856] p-10 flex flex-col items-center justify-between shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-[#f4b400]">
-                <div class="mb-8">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-20 h-20 text-[#f4b400]">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                </div>
-                <h3 class="text-3xl font-semibold text-white mb-6">Desenvolvimento de Aplicativos</h3>
-                <p class="text-gray-200 text-center leading-relaxed text-lg">Desenvolvemos aplicativos personalizados, inovadores e de alta performance, que atendem às necessidades do seu negócio.</p>
-            </div>
-
-            <!-- Serviço 2: Desenvolvimento de Sites -->
-            <div class="service-card transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl rounded-2xl bg-gradient-to-b from-[#1f2533] to-[#3c4856] p-10 flex flex-col items-center justify-between shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-[#3498db]">
-                <div class="mb-8">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-20 h-20 text-[#3498db]">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 11h18M3 15h18" />
-                    </svg>
-                </div>
-                <h3 class="text-3xl font-semibold text-white mb-6">Desenvolvimento de Sites</h3>
-                <p class="text-gray-200 text-center leading-relaxed text-lg">Criamos sites modernos, responsivos e otimizados para conversão, com design único e soluções eficazes para sua empresa.</p>
-            </div>
-
-            <!-- Serviço 3: Limpeza e Formatação de Computadores -->
-            <div class="service-card transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl rounded-2xl bg-gradient-to-b from-[#1f2533] to-[#3c4856] p-10 flex flex-col items-center justify-between shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-[#e74c3c]">
-                <div class="mb-8">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-20 h-20 text-[#e74c3c]">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 10l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                </div>
-                <h3 class="text-3xl font-semibold text-white mb-6">Limpeza e Formatação de Computadores</h3>
-                <p class="text-gray-200 text-center leading-relaxed text-lg">Melhore a performance do seu computador com nossos serviços de limpeza e formatação de alta qualidade. Mais velocidade e segurança para o seu dia a dia.</p>
-            </div>
+<!-- Seção de Serviços -->
+<section id="servicos" class="py-32 bg-[#111827]">
+  <div class="max-w-screen-xl mx-auto px-6 sm:px-8">
+    <h2 class="text-5xl font-extrabold text-center text-white mb-20 animate__animated animate__fadeIn animate__delay-1s">
+      <i class="fa-solid fa-truck"></i> Nossos Serviços
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- Serviço 1: Desenvolvimento de Aplicativos -->
+      <div class="service-card transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl rounded-2xl bg-gradient-to-b from-[#1f2533] to-[#3c4856] p-10 flex flex-col items-center justify-between shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-[#f4b400]">
+        <div class="mb-8">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-[#f4b400]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
         </div>
+        <h3 class="text-3xl font-semibold text-white mb-6">Desenvolvimento de Aplicativos</h3>
+        <p class="text-gray-200 text-center leading-relaxed text-lg">Se você precisa de um app para transformar sua ideia em realidade, estou aqui para ajudar! Desenvolvo soluções móveis sob medida, garantindo que seu aplicativo seja funcional, intuitivo e de alta performance. Juntos, podemos criar algo que faça a diferença para o seu negócio.</p>
+      </div>
+
+      <!-- Serviço 2: Desenvolvimento de Sites -->
+      <div class="service-card transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl rounded-2xl bg-gradient-to-b from-[#1f2533] to-[#3c4856] p-10 flex flex-col items-center justify-between shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-[#3498db]">
+        <div class="mb-8">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-[#3498db]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 11h18M3 15h18" />
+          </svg>
+        </div>
+        <h3 class="text-3xl font-semibold text-white mb-6">Desenvolvimento de Sites</h3>
+        <p class="text-gray-200 text-center leading-relaxed text-lg">Eu sei o quanto um site bem feito pode ajudar sua empresa a crescer. Se você precisa de um site moderno, rápido e que se destaque, estou pronto para criar a plataforma perfeita para você. Vamos criar algo único e eficaz, que conecte sua marca ao seu público de maneira incrível.</p>
+      </div>
+
+      <!-- Serviço 3: Limpeza e Formatação de Computadores -->
+      <div class="service-card transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl rounded-2xl bg-gradient-to-b from-[#1f2533] to-[#3c4856] p-10 flex flex-col items-center justify-between shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-[#e74c3c]">
+        <div class="mb-8">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-[#e74c3c]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 10l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </div>
+        <h3 class="text-3xl font-semibold text-white mb-6">Limpeza e Formatação de Computadores</h3>
+        <p class="text-gray-200 text-center leading-relaxed text-lg">Você sabia que o desempenho do seu computador pode melhorar muito com uma boa limpeza e formatação? Se seu PC está lento ou com problemas, posso ajudar! Vamos restaurar a performance dele, garantindo mais velocidade, segurança e estabilidade para o seu trabalho e lazer.</p>
+      </div>
     </div>
+  </div>
 </section>
 
 

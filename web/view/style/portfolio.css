@@ -14,6 +14,8 @@
     animation: slideIn 0.8s ease-out;
 }
 
+
+
 /* Efeito de Hover nos Cards */
 .card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -28,7 +30,7 @@
 
 /* Fundo personalizado */
 .bg-custom {
-    background-color: rgb(40, 41, 62);
+  background-color: #111827;
 }
 
 /* Estilo do botão de ação */
